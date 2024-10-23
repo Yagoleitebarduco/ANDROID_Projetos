@@ -32,24 +32,27 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:text="Gerar Frase"
-            />
+            android:backgroundTint="#3a5a40"
+            android:onClick="gerarFrase"
+            android:text="Gerar Frase" />
 
         <Button
             android:id="@+id/btn_exibirTodas"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
+            android:backgroundTint="#3a5a40"
+            android:onClick="exibirFrases"
             android:text="Exibir Todos" />
 
         <TextView
-            android:id="@+id/result"
+            android:id="@+id/txt_result"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
-            android:fontFamily="sans-serif"
+            android:fontFamily="sans-serif-black"
             android:textSize="24dp"
-            android:textColor="#2d6a4f"
+            android:textColor="#000"
             android:text="Frase do Dia" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
