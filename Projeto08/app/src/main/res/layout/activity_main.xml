@@ -37,6 +37,7 @@
         android:layout_marginTop="488dp"
         android:backgroundTint="#023e8a"
         android:fontFamily="sans-serif-black"
+        android:onClick="caucularPreco"
         android:text="Caucular"
         app:cornerRadius="15dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -45,6 +46,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
+        android:id="@+id/txt_result"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="568dp"
@@ -65,6 +67,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txt_precoAlcool"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Preço do Alcool"
@@ -81,6 +84,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txt_precoGasolina"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Preço da Gasolina"
