@@ -50,11 +50,13 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <SeekBar
-        android:id="@+id/seekBar_porcentagemar"
+        android:id="@+id/seekBar_porcentagem"
         android:layout_width="309dp"
         android:layout_height="23dp"
         android:layout_marginTop="464dp"
         android:thumbTint="#fdc43f"
+        android:progressTint="#fdc43f"
+        android:progressBackgroundTint="#000000"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.735"
         app:layout_constraintStart_toStartOf="parent"
