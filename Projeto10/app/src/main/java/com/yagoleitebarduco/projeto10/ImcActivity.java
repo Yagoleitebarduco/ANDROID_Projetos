@@ -115,6 +115,11 @@ public class ImcActivity extends AppCompatActivity {
     }
 
     public void limpar(View view) {
+        editPeso.setText("");
+        editAltura.setText("");
 
+        peso = 0;
+        altura = 0;
+        imc = 0;
     }
 }
