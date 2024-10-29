@@ -11,15 +11,11 @@
     <LinearLayout
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" >
+        app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -33,14 +29,44 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:background="#fb8500"
-                android:orientation="vertical"></LinearLayout>
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/app_imc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+                    android:onClick="abrirAppImc"
+                    android:text="IMC"
+                    android:textAlignment="center"
+                    android:textColor="#000"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:drawableTop="@drawable/balanceada"/>
+            </LinearLayout>
 
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:background="#0077b6"
-                android:orientation="vertical"></LinearLayout>
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/app_calcaGasolina"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableTop="@drawable/gasolina"
+                    android:fontFamily="sans-serif"
+                    android:onClick="abrirAppCalcGasolina"
+                    android:text="CALCULADORA GASOLINA"
+                    android:textAlignment="center"
+                    android:textColor="#000"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
         </LinearLayout>
 
         <LinearLayout
@@ -55,15 +81,44 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:background="#4CAF50"
-                android:orientation="vertical"></LinearLayout>
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/app_Calculadora"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableTop="@drawable/calculadora"
+                    android:fontFamily="sans-serif"
+                    android:onClick="abrirAppCalcGorjeta"
+                    android:text="CALCULADORA"
+                    android:textAlignment="center"
+                    android:textColor="#000"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
 
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:background="#F44336"
-                android:orientation="vertical"></LinearLayout>
-        </LinearLayout>
+                android:orientation="vertical"
+                android:gravity="center">
 
+                <TextView
+                    android:id="@+id/app_Outros"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableTop="@drawable/android"
+                    android:fontFamily="sans-serif"
+                    android:onClick="abrirAppOutros"
+                    android:text="OUTROS"
+                    android:textAlignment="center"
+                    android:textColor="#000"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
